@@ -10,6 +10,9 @@
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.ionicframework.myreddit367504"
     },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.ionicframework.myreddit367504"
+    },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.ionicframework.myreddit367504"
     },
@@ -20,9 +23,6 @@
       "PACKAGE_NAME": "com.ionicframework.myreddit367504"
     },
     "ionic-plugin-keyboard": {
-      "PACKAGE_NAME": "com.ionicframework.myreddit367504"
-    },
-    "cordova-plugin-inappbrowser": {
       "PACKAGE_NAME": "com.ionicframework.myreddit367504"
     }
   },

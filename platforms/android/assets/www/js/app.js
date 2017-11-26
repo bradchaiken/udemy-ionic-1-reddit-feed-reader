@@ -7,29 +7,37 @@
     $scope.stories = [];
 
     function loadStories(params, callback) {
-      $http.get('http://www.reddit.com/r/boxing/new/.json', {params: params})
-        .success(function (response) {
+      $http.get('https://www.reddit.com/r/Boxing/new/.json', {params: params})
+        .success(function(response) {
           var stories = [];
           angular.forEach(response.data.children, function(child) {
-            $scope.stories.push(child.data);
+            var story = child.data;
+            if (!story.thumbnail || story.thumbnail === 'self' || story.thumbnail === 'default') {
+              story.thumbnail = 'https://www.redditstatic.com/icon.png';
+            }
+
+            if (story.thumbnail === 'nsfw') {
+              story.thumbnail = 'https://i.imgur.com/6i1Q2k6.png';
+            }
+
+            stories.push(child.data);
           });
           callback(stories);
         });
     }
 
-    $scope.loadOlderStories = function () {
+    $scope.loadOlderStories = function() {
       var params = {};
-
       if ($scope.stories.length > 0) {
         params['after'] = $scope.stories[$scope.stories.length - 1].name;
       }
       loadStories(params, function(olderStories) {
-        $scope.stories.concat(olderStories);
+        $scope.stories = $scope.stories.concat(olderStories);
         $scope.$broadcast('scroll.infiniteScrollComplete');
       });
     };
 
-    $scope.loadNewerStories = function () {
+    $scope.loadNewerStories = function() {
       var params = {'before': $scope.stories[0].name};
       loadStories(params, function(newerStories) {
         $scope.stories = newerStories.concat($scope.stories);
@@ -39,16 +47,16 @@
 
     $scope.openLink = function(url) {
       window.open(url, '_blank');
-    }
+    };
+
   });
 
   app.run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {
       if(window.cordova && window.cordova.plugins.Keyboard) {
         cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-        cordova.plugins.Keyboard.disableScroll(true);
       }
-      if(window.cordova && window.cordova.InAppBrowser) {
+      if (window.cordova && window.cordova.InAppBrowser) {
         window.open = window.cordova.InAppBrowser.open;
       }
       if(window.StatusBar) {
@@ -56,5 +64,6 @@
       }
     });
   });
+
 }());
 

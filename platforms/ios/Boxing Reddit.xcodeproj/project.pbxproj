@@ -16,12 +16,12 @@
 		3047A5131AB8059700498E2A /* build-release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5101AB8059700498E2A /* build-release.xcconfig */; };
 		3047A5141AB8059700498E2A /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5111AB8059700498E2A /* build.xcconfig */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		76AC15F87A204FB2AF629E30 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = DB77FC2555544FA2A3571B69 /* CDVDevice.m */; };
-		EE1E22D2DA9A4F9BB0173EE5 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 617F77F44C264B47A5A2E05C /* CDVSplashScreen.m */; };
-		78282861CD384F27A0400CB6 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 671F7EB217F44FD9A10FE0DB /* CDVViewController+SplashScreen.m */; };
-		03AE069613E64FADB11C6FB2 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A4E4789C704984A48ED4D3 /* CDVStatusBar.m */; };
-		092C7EFDFC364F1288155A7A /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = FED84C95EFD34713A6B9B397 /* IonicKeyboard.m */; };
-		BDBF843917F249419D8A7D21 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B3A549344149DAB2CC10A1 /* CDVInAppBrowser.m */; };
+		9ED8B9E80C844244844377B2 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B46B92CE2445E48E346C13 /* CDVDevice.m */; };
+		8E0BAA73CBA44F79B1EBB6F7 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 12796EF673D941AE89058E64 /* CDVInAppBrowser.m */; };
+		05253E1A886D4599874943A8 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B92E1040DEE64F4B8D6B9A85 /* CDVSplashScreen.m */; };
+		8982FCECDB09491380BC1AB6 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B75E6A7CDE8406B917EF108 /* CDVViewController+SplashScreen.m */; };
+		2D0C167AF4F94F9F9A01DEC6 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AF94C8958F1C4CD29F76F4EC /* CDVStatusBar.m */; };
+		71D33473E43C45599641D72A /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5686FE5CF8A04B22A2ED9EB3 /* IonicKeyboard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,10 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "my-reddit/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Boxing Reddit/Images.xcassets"; sourceTree = SOURCE_ROOT; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* my-reddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-reddit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* Boxing Reddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boxing Reddit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
@@ -55,25 +55,25 @@
 		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = cordova/build-debug.xcconfig; sourceTree = SOURCE_ROOT; };
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = cordova/build-release.xcconfig; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
-		32CA4F630368D1EE00C91783 /* my-reddit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "my-reddit-Prefix.pch"; sourceTree = "<group>"; };
-		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = "my-reddit/CDVLaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
-		8D1107310486CEB800E47090 /* my-reddit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "my-reddit-Info.plist"; path = "my-reddit/my-reddit-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		32CA4F630368D1EE00C91783 /* Boxing Reddit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Boxing Reddit-Prefix.pch"; sourceTree = "<group>"; };
+		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = "Boxing Reddit/CDVLaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		8D1107310486CEB800E47090 /* Boxing Reddit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Boxing Reddit-Info.plist"; path = "Boxing Reddit/Boxing Reddit-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
-		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "my-reddit/config.xml"; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Boxing Reddit/config.xml"; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		DB77FC2555544FA2A3571B69 /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		EC3B89E9C7D74FC3B536096F /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		617F77F44C264B47A5A2E05C /* CDVSplashScreen.m */ = {isa = PBXFileReference; name = "CDVSplashScreen.m"; path = "cordova-plugin-splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		671F7EB217F44FD9A10FE0DB /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		1A89C44D18C74676AC3EB2B9 /* CDVSplashScreen.h */ = {isa = PBXFileReference; name = "CDVSplashScreen.h"; path = "cordova-plugin-splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		E78E7FFE05B449EFA94F19A7 /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		E2A4E4789C704984A48ED4D3 /* CDVStatusBar.m */ = {isa = PBXFileReference; name = "CDVStatusBar.m"; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		79A74C385F5542A2A3AD168E /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		FED84C95EFD34713A6B9B397 /* IonicKeyboard.m */ = {isa = PBXFileReference; name = "IonicKeyboard.m"; path = "ionic-plugin-keyboard/IonicKeyboard.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		EBA7701657AF43D2957388D3 /* IonicKeyboard.h */ = {isa = PBXFileReference; name = "IonicKeyboard.h"; path = "ionic-plugin-keyboard/IonicKeyboard.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		B8B3A549344149DAB2CC10A1 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		985438EB62C64ED4B0252DFC /* CDVInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		28B46B92CE2445E48E346C13 /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		4334AE20E2194B2EAA13B11D /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		12796EF673D941AE89058E64 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		44510B54708E474C81FFFE17 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B92E1040DEE64F4B8D6B9A85 /* CDVSplashScreen.m */ = {isa = PBXFileReference; name = "CDVSplashScreen.m"; path = "cordova-plugin-splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		2B75E6A7CDE8406B917EF108 /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		6B102D003BEB46DDB1643615 /* CDVSplashScreen.h */ = {isa = PBXFileReference; name = "CDVSplashScreen.h"; path = "cordova-plugin-splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5EA76A5064384D18BD24B78C /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		AF94C8958F1C4CD29F76F4EC /* CDVStatusBar.m */ = {isa = PBXFileReference; name = "CDVStatusBar.m"; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		6554F7132CAF4B078C43F52D /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5686FE5CF8A04B22A2ED9EB3 /* IonicKeyboard.m */ = {isa = PBXFileReference; name = "IonicKeyboard.m"; path = "ionic-plugin-keyboard/IonicKeyboard.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		A2407426E2954891BA0797A1 /* IonicKeyboard.h */ = {isa = PBXFileReference; name = "IonicKeyboard.h"; path = "ionic-plugin-keyboard/IonicKeyboard.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,13 +98,13 @@
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
 			);
 			name = Classes;
-			path = "my-reddit/Classes";
+			path = "Boxing Reddit/Classes";
 			sourceTree = SOURCE_ROOT;
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* my-reddit.app */,
+				1D6058910D05DD3D006BFB54 /* Boxing Reddit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,12 +129,12 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32CA4F630368D1EE00C91783 /* my-reddit-Prefix.pch */,
+				32CA4F630368D1EE00C91783 /* Boxing Reddit-Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
 			);
 			name = "Other Sources";
-			path = "my-reddit";
+			path = "Boxing Reddit";
 			sourceTree = "<group>";
 		};
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
@@ -142,11 +142,11 @@
 			children = (
 				0207DA571B56EA530066E2B4 /* Images.xcassets */,
 				3047A50E1AB8057F00498E2A /* config */,
-				8D1107310486CEB800E47090 /* my-reddit-Info.plist */,
+				8D1107310486CEB800E47090 /* Boxing Reddit-Info.plist */,
 				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
 			);
 			name = Resources;
-			path = "my-reddit/Resources";
+			path = "Boxing Reddit/Resources";
 			sourceTree = "<group>";
 		};
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
@@ -177,21 +177,21 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				DB77FC2555544FA2A3571B69 /* CDVDevice.m */,
-				EC3B89E9C7D74FC3B536096F /* CDVDevice.h */,
-				617F77F44C264B47A5A2E05C /* CDVSplashScreen.m */,
-				671F7EB217F44FD9A10FE0DB /* CDVViewController+SplashScreen.m */,
-				1A89C44D18C74676AC3EB2B9 /* CDVSplashScreen.h */,
-				E78E7FFE05B449EFA94F19A7 /* CDVViewController+SplashScreen.h */,
-				E2A4E4789C704984A48ED4D3 /* CDVStatusBar.m */,
-				79A74C385F5542A2A3AD168E /* CDVStatusBar.h */,
-				FED84C95EFD34713A6B9B397 /* IonicKeyboard.m */,
-				EBA7701657AF43D2957388D3 /* IonicKeyboard.h */,
-				B8B3A549344149DAB2CC10A1 /* CDVInAppBrowser.m */,
-				985438EB62C64ED4B0252DFC /* CDVInAppBrowser.h */,
+				28B46B92CE2445E48E346C13 /* CDVDevice.m */,
+				4334AE20E2194B2EAA13B11D /* CDVDevice.h */,
+				12796EF673D941AE89058E64 /* CDVInAppBrowser.m */,
+				44510B54708E474C81FFFE17 /* CDVInAppBrowser.h */,
+				B92E1040DEE64F4B8D6B9A85 /* CDVSplashScreen.m */,
+				2B75E6A7CDE8406B917EF108 /* CDVViewController+SplashScreen.m */,
+				6B102D003BEB46DDB1643615 /* CDVSplashScreen.h */,
+				5EA76A5064384D18BD24B78C /* CDVViewController+SplashScreen.h */,
+				AF94C8958F1C4CD29F76F4EC /* CDVStatusBar.m */,
+				6554F7132CAF4B078C43F52D /* CDVStatusBar.h */,
+				5686FE5CF8A04B22A2ED9EB3 /* IonicKeyboard.m */,
+				A2407426E2954891BA0797A1 /* IonicKeyboard.h */,
 			);
 			name = Plugins;
-			path = "my-reddit/Plugins";
+			path = "Boxing Reddit/Plugins";
 			sourceTree = SOURCE_ROOT;
 		};
 		EB87FDF11871DA420020F90C /* Staging */ = {
@@ -206,9 +206,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* my-reddit */ = {
+		1D6058900D05DD3D006BFB54 /* Boxing Reddit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "my-reddit" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Boxing Reddit" */;
 			buildPhases = (
 				304B58A110DAC018002A0835 /* Copy www directory */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
@@ -220,9 +220,9 @@
 			dependencies = (
 				301BF551109A68C00062928A /* PBXTargetDependency */,
 			);
-			name = "my-reddit";
-			productName = "my-reddit";
-			productReference = 1D6058910D05DD3D006BFB54 /* my-reddit.app */;
+			name = "Boxing Reddit";
+			productName = "Boxing Reddit";
+			productReference = 1D6058910D05DD3D006BFB54 /* Boxing Reddit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -247,7 +247,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* my-reddit */,
+				1D6058900D05DD3D006BFB54 /* Boxing Reddit */,
 			);
 		};
 /* End PBXProject section */
@@ -301,12 +301,12 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				76AC15F87A204FB2AF629E30 /* CDVDevice.m in Sources */,
-				EE1E22D2DA9A4F9BB0173EE5 /* CDVSplashScreen.m in Sources */,
-				78282861CD384F27A0400CB6 /* CDVViewController+SplashScreen.m in Sources */,
-				03AE069613E64FADB11C6FB2 /* CDVStatusBar.m in Sources */,
-				092C7EFDFC364F1288155A7A /* IonicKeyboard.m in Sources */,
-				BDBF843917F249419D8A7D21 /* CDVInAppBrowser.m in Sources */,
+				9ED8B9E80C844244844377B2 /* CDVDevice.m in Sources */,
+				8E0BAA73CBA44F79B1EBB6F7 /* CDVInAppBrowser.m in Sources */,
+				05253E1A886D4599874943A8 /* CDVSplashScreen.m in Sources */,
+				8982FCECDB09491380BC1AB6 /* CDVViewController+SplashScreen.m in Sources */,
+				2D0C167AF4F94F9F9A01DEC6 /* CDVStatusBar.m in Sources */,
+				71D33473E43C45599641D72A /* IonicKeyboard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,14 +334,14 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "my-reddit/my-reddit-Prefix.pch";
+				GCC_PREFIX_HEADER = "Boxing Reddit/Boxing Reddit-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
-				INFOPLIST_FILE = "my-reddit/my-reddit-Info.plist";
+				INFOPLIST_FILE = "Boxing Reddit/Boxing Reddit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				PRODUCT_NAME = "my-reddit";
+				PRODUCT_NAME = "Boxing Reddit";
 			};
 			name = Debug;
 		};
@@ -356,14 +356,14 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "my-reddit/my-reddit-Prefix.pch";
+				GCC_PREFIX_HEADER = "Boxing Reddit/Boxing Reddit-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
-				INFOPLIST_FILE = "my-reddit/my-reddit-Info.plist";
+				INFOPLIST_FILE = "Boxing Reddit/Boxing Reddit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				PRODUCT_NAME = "my-reddit";
+				PRODUCT_NAME = "Boxing Reddit";
 			};
 			name = Release;
 		};
@@ -421,7 +421,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "my-reddit" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Boxing Reddit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,

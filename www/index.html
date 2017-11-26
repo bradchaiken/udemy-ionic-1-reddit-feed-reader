@@ -19,36 +19,39 @@
 
   <body ng-app="myReddit" ng-controller="RedditCtrl">
     <ion-pane>
-      <ion-header-bar class="bar-positive">
-        <h1 class="title">Boxing Reddit</h1>
-      </ion-header-bar>
-      <ion-content>
-        <div class="list">
 
-          <ion-refresher
-            pulling-text="pull to refresh"
-            on-refresh="loadNewerStories()">
-          </ion-refresher>
+      <ion-nav-view></ion-nav-view>
 
-          <a class="item item-avatar-left"
-             ng-click="openLink(story.url)"
-             ng-repeat="story in stories track by story.id">
 
-            <img ng-if="story.thumbnail.startsWith('http')" ng-src="{{story.thumbnail}}">
-            <img ng-src="http://via.placeholder.com/150x150" ng-if="!story.thumbnail.startsWith('http')">
+      <!--<ion-header-bar class="bar-positive">-->
+        <!--<h1 class="title">Detroit Boxing News - World</h1>-->
+      <!--</ion-header-bar>-->
+      <!--<ion-content>-->
+        <!--<div class="list">-->
 
-            <h2 class="story-title">{{story.title}}</h2>
+          <!--<ion-refresher-->
+            <!--pulling-text="pull to refresh"-->
+            <!--on-refresh="loadNewerStories()">-->
+          <!--</ion-refresher>-->
 
-            <p>
-              <span am-time-ago="story.created_utc"></span>
-              <span ng-if="story.thumbnail.startsWith('http')"> - {{story.domain }}</span>
-            </p>
+          <!--<a class="item item-avatar-left"-->
+             <!--ng-click="openLink(story.url)"-->
+             <!--ng-repeat="story in stories track by story.id">-->
 
-          </a>
-        </div>
+            <!--<img ng-if="story.thumbnail.startsWith('http')" ng-src="{{story.thumbnail}}">-->
 
-        <ion-infinite-scroll on-infinite="loadOlderStories()" distance="1%"></ion-infinite-scroll>
-      </ion-content>
+            <!--<h2 class="story-title">{{story.title}}</h2>-->
+
+            <!--<p>-->
+              <!--<span am-time-ago="story.created_utc"></span>-->
+              <!--<span ng-if="!story.domain.startsWith('self')"> - {{story.domain }}</span>-->
+            <!--</p>-->
+
+          <!--</a>-->
+        <!--</div>-->
+
+        <!--<ion-infinite-scroll on-infinite="loadOlderStories()" distance="1%"></ion-infinite-scroll>-->
+      <!--</ion-content>-->
     </ion-pane>
   </body>
 
