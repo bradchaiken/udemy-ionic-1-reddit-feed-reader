@@ -1,6 +1,6 @@
 (function () {
 
-  var app = angular.module('myReddit', ['ionic', 'angularMoment'])
+  var app = angular.module('myReddit', ['ionic', 'angularMoment']);
 
   app.controller('RedditCtrl', function ($http, $scope) {
 
@@ -19,6 +19,8 @@
             if (story.thumbnail === 'nsfw') {
               story.thumbnail = 'https://i.imgur.com/6i1Q2k6.png';
             }
+
+            console.log("story", story);
 
             stories.push(child.data);
           });

@@ -8,9 +8,9 @@
 
     function loadStories(params, callback) {
       $http.get('https://www.reddit.com/r/Boxing/new/.json', {params: params})
-        .success(function(response) {
+        .success(function (response) {
           var stories = [];
-          angular.forEach(response.data.children, function(child) {
+          angular.forEach(response.data.children, function (child) {
             var story = child.data;
             if (!story.thumbnail || story.thumbnail === 'self' || story.thumbnail === 'default') {
               story.thumbnail = 'https://www.redditstatic.com/icon.png';
@@ -24,6 +24,19 @@
           });
           callback(stories);
         });
+
+      // TODO: For DBN JSON Api endpoint.
+      // $http.get('https://detroitboxingnews.com/json/feed', {params: params})
+      //   .success(function(response) {
+      //     var stories = [];
+      //     angular.forEach(response, function(story) {
+      //
+      //       stories.push(story);
+      //     });
+      //     callback(stories);
+      //   });
+      // }
+
     }
 
     $scope.loadOlderStories = function() {
@@ -45,8 +58,12 @@
       });
     };
 
-    $scope.openLink = function(url) {
-      window.open(url, '_blank');
+    $scope.openLink = function(story) {
+      if (story['user_id']) {
+        window.open("https://www.detroitboxingnews.com/articles/" + story['slug'], '_blank');
+      } else {
+        window.open(story.url, '_blank');
+      }
     };
 
   });
@@ -66,4 +83,3 @@
   });
 
 }());
-

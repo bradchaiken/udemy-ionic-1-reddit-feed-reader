@@ -23,35 +23,54 @@
       <ion-nav-view></ion-nav-view>
 
 
-      <!--<ion-header-bar class="bar-positive">-->
-        <!--<h1 class="title">Detroit Boxing News - World</h1>-->
-      <!--</ion-header-bar>-->
-      <!--<ion-content>-->
-        <!--<div class="list">-->
+      <ion-header-bar class="bar-positive">
+        <h1 class="title">Detroit Boxing News - World</h1>
+      </ion-header-bar>
+      <ion-content>
+        <div class="list">
+
+          <ion-refresher
+            pulling-text="Pull To Refresh"
+            on-refresh="loadNewerStories()"
+            refreshing-text="Fetching ..."
+          ></ion-refresher>
 
           <!--<ion-refresher-->
             <!--pulling-text="pull to refresh"-->
             <!--on-refresh="loadNewerStories()">-->
           <!--</ion-refresher>-->
 
-          <!--<a class="item item-avatar-left"-->
-             <!--ng-click="openLink(story.url)"-->
-             <!--ng-repeat="story in stories track by story.id">-->
+          <a class="item item-avatar-left"
+             ng-click="openLink(story)"
+             ng-repeat="story in stories track by story.id">
 
-            <!--<img ng-if="story.thumbnail.startsWith('http')" ng-src="{{story.thumbnail}}">-->
+              <!-- TODO: For DBN JSON Api endpoint. -->
 
-            <!--<h2 class="story-title">{{story.title}}</h2>-->
+              <!-- If a user id exists, then it is a DBN Article. -->
+              <!--<img ng-if="story['user_id']" ng-src="https://i.imgur.com/6i1Q2k6.png">-->
 
-            <!--<p>-->
-              <!--<span am-time-ago="story.created_utc"></span>-->
-              <!--<span ng-if="!story.domain.startsWith('self')"> - {{story.domain }}</span>-->
-            <!--</p>-->
+              <!--<h2 ng-if="story.headline.length > 0" class="story-title">{{story.headline}}</h2>-->
+              <!--<h2 ng-if="!story.headline.length > 0" class="story-title">{{story.title}}</h2>-->
 
-          <!--</a>-->
-        <!--</div>-->
+              <!--<p>-->
+                <!--<span am-time-ago="story.created_at"></span>-->
+                <!--<span> - Detroit Boxing News</span>-->
+              <!--</p>-->
 
-        <!--<ion-infinite-scroll on-infinite="loadOlderStories()" distance="1%"></ion-infinite-scroll>-->
-      <!--</ion-content>-->
+            <img ng-if="story.thumbnail.startsWith('http')" ng-src="{{story.thumbnail}}">
+
+            <h2 class="story-title">{{story.title}}</h2>
+
+            <p>
+              <span am-time-ago="story.created_utc | amFromUnix"></span>
+              <span ng-if="!story.domain.startsWith('self')"> - {{story.domain }}</span>
+            </p>
+
+          </a>
+        </div>
+
+        <ion-infinite-scroll on-infinite="loadOlderStories()" distance="1%"></ion-infinite-scroll>
+      </ion-content>
     </ion-pane>
   </body>
 
