@@ -1,4 +1,12 @@
 {
-  "name": "Boxing Reddit",
-  "app_id": ""
+  "name": "Detroit Boxing News - World",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
 }
